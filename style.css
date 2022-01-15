@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    background: url('Images/sunny.jpg') no-repeat center fixed;  ;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#container{
+    width: 480px;
+    height: 480px;
+    background: #000000d0;
+    color: white;
+    margin:100px auto;
+    
+    border-radius: 20px;
+}
+
+::placeholder {
+    font-family: 'Merriweather', serif;
+    /* font-size: 1rem; */
+}
+
+.item{
+    text-align: center;
+}
+#top{
+    width: 400px;
+    height: 120.66px;
+    margin: 0px 40px 5px 20px;
+    border-radius: 2px; 
+}
+
+.cityInput{
+    /* height: 200px; */
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+.btn{
+    /* background-color: black; */
+    margin-top: 50px;
+    margin-left: 5px;
+    padding: 5px;
+    border:2px solid black;
+    border-radius: 28px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+
+.desc {
+    text-transform: capitalize;
+}
+
+
+.info{
+    padding-left: 50px;
+    line-height: 20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.loading:after {
+visibility: visible;
+content: "Loading...";
+color: white;
+position: absolute;
+top: 0;
+left: 20px;
+}
+
